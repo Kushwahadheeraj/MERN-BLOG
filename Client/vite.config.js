@@ -6,10 +6,10 @@ import react from '@vitejs/plugin-react'
     server: {
       proxy: {
         '/api': {
-          target: 'http://localhost:3005',
+          target: 'https://blog-backend-x2i5.onrender.com',
           secure: false,
         },
       },
-    },
+    }, 
   plugins: [react()],
 })
