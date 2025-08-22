@@ -29,8 +29,9 @@ app.use(CookieParser());
 
 
 
-app.listen(3005, ()=>{
-    console.log('server is runing on port 3005')
+const PORT = process.env.PORT || 3005;
+app.listen(PORT, ()=>{
+    console.log(`server is runing on port ${PORT}`)
 })
 
 app.use('/api/user',userRoutes);

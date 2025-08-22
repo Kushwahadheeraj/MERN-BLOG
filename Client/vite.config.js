@@ -6,7 +6,7 @@ import react from '@vitejs/plugin-react'
     server: {
       proxy: {
         '/api': {
-          target: 'http://localhost:3005',
+          target: 'http://localhost:3001',
           secure: false,
         },
       },
